@@ -1,5 +1,13 @@
 <template>
-    <div class="nya-container" :class="{ 'transparent': $store.state.setting.bg.type !== 'none' && $store.state.setting.bg.transparentEl, 'pt': title }">
+    <div
+        :class="{
+            transparent:
+                $store.state.setting.bg.type !== 'none' &&
+                $store.state.setting.bg.transparentEl,
+            pt: title,
+        }"
+        class="nya-container"
+    >
         <div v-if="title" class="nya-title">
             <i v-if="icon" :class="'eva eva-' + icon"></i>
             <span v-if="title">{{ title }}</span>
@@ -7,7 +15,11 @@
         </div>
         <div v-if="$store.state.inFrames" class="nya-stitle">
             <span>本工具来自：</span>
-            <a :href="`${$store.state.env.url}`" target="_blank" rel="noopener noreferrer">{{ $store.state.env.url }}</a>
+            <a
+                :href="`${$store.state.env.url}`"
+                rel="noopener noreferrer"
+                target="_blank"
+            >{{ $store.state.env.url }}</a>
         </div>
         <slot></slot>
     </div>

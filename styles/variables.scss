@@ -1,5 +1,5 @@
 $theme: #249ffd;
-$borderColor: #DCDEE0;
+$borderColor: #dcdee0;
 $red: #f93a6d;
 
 $c-white: hsl(0, 0%, 100%);
@@ -13,7 +13,7 @@ $c-success: hsl(141, 71%, 48%);
 $c-warning: hsl(48, 100%, 67%);
 $c-danger: hsl(348, 100%, 61%);
 
-@mixin line-clamp ($num) {
+@mixin line-clamp($num) {
     display: -webkit-box;
     /* autoprefixer: ignore next */
     -webkit-box-orient: vertical;
@@ -21,7 +21,7 @@ $c-danger: hsl(348, 100%, 61%);
     overflow: hidden;
 }
 
-@mixin img ($width, $height: $width) {
+@mixin img($width, $height: $width) {
     width: $width;
     height: $height;
     img {

@@ -6,27 +6,27 @@ html {
     overflow-y: scroll;
 }
 
-.v--modal-block-scroll{
+.v--modal-block-scroll {
     height: 100vh;
 }
 
-.nya-c-theme{
+.nya-c-theme {
     color: var(--theme);
 }
 
-.nya-c-success{
+.nya-c-success {
     color: var(--theme-success);
 }
 
-.nya-c-danger{
+.nya-c-danger {
     color: var(--theme-danger);
 }
 
-.nya-c-info{
+.nya-c-info {
     color: var(--theme-info);
 }
 
-.nya-c-wrning{
+.nya-c-wrning {
     color: var(--theme-wrning);
 }
 
@@ -39,7 +39,7 @@ html {
     --theme-danger: #fa5477;
     --theme-info: #9ed0ff;
     --theme-wrning: #ffdd98;
-    --border-color: #DCDEE0;
+    --border-color: #dcdee0;
     @media (max-width: 500px) {
         font-size: 13px;
     }
@@ -51,10 +51,11 @@ html {
     }
 }
 
-.sweetalert2{
-    animation: fadeIn .15s;
+.sweetalert2 {
+    animation: fadeIn 0.15s;
     box-shadow: 0 20px 60px -2px rgba(27, 33, 58, 0.4);
-    input.swal2-input{
+
+    input.swal2-input {
         width: 100%;
         height: auto;
         padding: 10px 15px;
@@ -86,15 +87,15 @@ html {
 }
 div.swal2-container.swal2-shown {
     background-color: rgba(0, 0, 0, 0.2);
-    animation: fadeIn .2s;
+    animation: fadeIn 0.2s;
 }
 @keyframes fadeIn {
     from {
-      opacity: 0;
+        opacity: 0;
     }
-  
+
     to {
-      opacity: 1;
+        opacity: 1;
     }
 }
 
@@ -112,7 +113,8 @@ a {
     color: #0366d6;
     word-break: break-all;
     text-decoration: none;
-    a[target="_blank"] {
+
+    a[target='_blank'] {
         cursor: alias;
     }
 
@@ -126,7 +128,8 @@ pre {
     padding: 10px 15px;
     line-height: 1.5;
     font-size: 14px;
-    font-family: Menlo, Monaco, Consolas, Andale Mono, lucida console, Courier New, monospace;
+    font-family: Menlo, Monaco, Consolas, Andale Mono, lucida console,
+    Courier New, monospace;
     background-color: #f2f4f5;
     color: #314659;
     overflow-x: auto;
@@ -158,7 +161,7 @@ hr {
     background-color: var(--theme);
 }
 
-.hasbg{
+.hasbg {
     --border-color: rgb(194, 194, 194);
 }
 
@@ -179,24 +182,28 @@ hr {
     }
     .pay {
         img {
-            background-color: rgba($color: #fff, $alpha: .65);
+            background-color: rgba($color: #fff, $alpha: 0.65);
             border-radius: 5px;
-            &[alt="weixin"]{
+
+            &[alt='weixin'] {
                 border-radius: 50%;
             }
         }
     }
     .nya-container {
         background-color: #282c34;
-        &.transparent{
-            background-color: rgba($color: #282c34, $alpha: .65);
+
+        &.transparent {
+            background-color: rgba($color: #282c34, $alpha: 0.65);
         }
-        .nya-title{
+
+        .nya-title {
             background-color: #161616;
-            box-shadow: 0 0.5rem 0.625rem rgba(15, 15, 15, 0.30196)
+            box-shadow: 0 0.5rem 0.625rem rgba(15, 15, 15, 0.30196);
         }
     }
-    .nya-btn{
+
+    .nya-btn {
         color: inherit;
     }
     .nya-input {
@@ -208,23 +215,27 @@ hr {
             }
         }
     }
-    .search-component{
-        .search{
+
+    .search-component {
+        .search {
             background-color: #282c34;
-            &.transparent{
-                background-color: rgba($color: #282c34, $alpha: .65);
+
+            &.transparent {
+                background-color: rgba($color: #282c34, $alpha: 0.65);
             }
         }
     }
-    pre{
+
+    pre {
         background-color: #acacac;
     }
-    .float-btn{
-        opacity: .8;
+
+    .float-btn {
+        opacity: 0.8;
     }
 }
 
-.nya-subtitle{
+.nya-subtitle {
     display: block;
     font-size: 18px;
     margin-bottom: 10px;
@@ -273,9 +284,10 @@ hr {
     max-width: 100%;
 }
 
-a.nya-btn{
+a.nya-btn {
     color: var(--t1);
-    &:hover{
+
+    &:hover {
         text-decoration: none;
     }
 }
@@ -288,9 +300,9 @@ a.nya-btn{
     cursor: pointer;
     outline: none;
     border: 1px solid var(--border-color);
-    background-color: rgba($color: var(--theme), $alpha: .1);
+    background-color: rgba($color: var(--theme), $alpha: 0.1);
     color: var(--t1);
-    transition: border-color .2s ease, color .2s ease;
+    transition: border-color 0.2s ease, color 0.2s ease;
     letter-spacing: 1px;
 
     &.is-smail {
@@ -298,19 +310,20 @@ a.nya-btn{
         padding: 4px 10px;
     }
 
-    &:active, &.active {
+    &:active,
+    &.active {
         background-color: var(--theme);
         color: #fff;
         border-color: var(--theme);
     }
 
-    &:hover{
+    &:hover {
         border-color: var(--theme);
         color: var(--theme);
     }
 
-    &[disabled="disabled"] {
-        opacity: .8;
+    &[disabled='disabled'] {
+        opacity: 0.8;
         cursor: no-drop;
     }
 }
@@ -334,7 +347,7 @@ a.nya-btn{
     margin: auto;
     border-collapse: collapse;
     white-space: nowrap;
-    table-layout:fixed;
+    table-layout: fixed;
     overflow: auto;
     th,
     td {
@@ -345,10 +358,11 @@ a.nya-btn{
         border-collapse: collapse;
         padding: 10px;
         text-align: left;
-        text-overflow:ellipsis;
-        overflow:hidden;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
-    @media(max-width: 600px){
+
+    @media (max-width: 600px) {
         display: block;
         white-space: nowrap;
         overflow: auto;
@@ -361,11 +375,14 @@ a.nya-btn{
     display: flex;
     align-items: flex-end;
     max-width: 100%;
-    .nya-input, .nya-btn{
+
+    .nya-input,
+    .nya-btn {
         display: inline-block;
     }
-    .nya-input{
-        flex:1;
+
+    .nya-input {
+        flex: 1;
         max-width: calc(100% - 120px);
     }
     button {
@@ -376,7 +393,7 @@ a.nya-btn{
     }
 }
 
-.nya-hide-scroll{
+.nya-hide-scroll {
     &::-webkit-scrollbar {
         width: 0 !important;
     }

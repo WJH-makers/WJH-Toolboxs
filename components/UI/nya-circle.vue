@@ -7,27 +7,32 @@
             xmlns="http://www.w3.org/2000/svg"
         >
             <circle
-                :r="(width-radius)/2"
-                :cy="width/2"
-                :cx="width/2"
+                :cx="width / 2"
+                :cy="width / 2"
+                :r="(width - radius) / 2"
                 :stroke-width="radius"
                 :stroke="backgroundColor"
                 fill="none"
             />
             <circle
                 ref="$bar"
-                :r="(width-radius)/2"
-                :cy="width/2"
-                :cx="width/2"
+                :cx="width / 2"
+                :cy="width / 2"
+                :r="(width - radius) / 2"
                 :stroke="barColor"
                 :stroke-width="radius"
                 :stroke-linecap="isRound ? 'round' : 'square'"
                 :stroke-dasharray="(width - radius) * 3.14"
-                :stroke-dashoffset="(width - radius) * 3.14 * (100 - progress) / 100"
+                :stroke-dashoffset="
+                    ((width - radius) * 3.14 * (100 - progress)) / 100
+                "
                 fill="none"
             />
         </svg>
-        <div class="center" :style="{ 'font-size': `${fontSize}px`, color: fontColor }">
+        <div
+            :style="{ 'font-size': `${fontSize}px`, color: fontColor }"
+            class="center"
+        >
             <slot></slot>
         </div>
     </div>

@@ -1,13 +1,7 @@
-$font: 'Source Sans Pro',
--apple-system,
-BlinkMacSystemFont,
-'Segoe UI',
-Roboto,
-'Helvetica Neue',
-Arial,
-sans-serif;
+$font: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+'Helvetica Neue', Arial, sans-serif;
 
-html{
+html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 }
@@ -24,20 +18,21 @@ body {
 
 ul {
     padding-left: 25px;
-    li{
+
+    li {
         margin: 5px 0;
     }
 }
 
-p{
+p {
     line-height: 1.5;
 }
 
-input[type="search"]::-webkit-search-cancel-button{
+input[type='search']::-webkit-search-cancel-button {
     display: none;
 }
 
-input{
+input {
     -webkit-appearance: none;
     border-radius: 0;
 }
@@ -49,15 +44,15 @@ blockquote {
     color: #8a8989;
 }
 
-.viewer-toolbar > ul > li{
+.viewer-toolbar > ul > li {
     margin: 0;
 }
 
-.v-note-help-show{
+.v-note-help-show {
     box-sizing: border-box;
 }
 
-[type="button"]{
+[type='button'] {
     -webkit-appearance: none;
 }
 
@@ -94,7 +89,8 @@ blockquote {
             border-radius: 10px;
             background-color: #b6b4b4;
         }
-        code{
+
+        code {
             background-color: transparent;
         }
     }
@@ -172,7 +168,8 @@ blockquote {
     ol {
         padding-left: 2em;
         margin: 0 0 1.2em 0;
-        li{
+
+        li {
             list-style: decimal;
         }
     }

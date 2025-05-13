@@ -1,11 +1,21 @@
 <template>
-    <div class="nya-select" :class="{ 'fullwidth': fullwidth }">
+    <div :class="{ fullwidth: fullwidth }" class="nya-select">
         <label v-if="label" :for="id">
             {{ label }}
         </label>
         <div class="select">
-            <select :disabled="disabled" :id="id" v-bind="$attrs" @input="$emit('input', $event.target.value)" @change="$emit('change')">
-                <option v-for="(item, index) in items" :key="index" :value="index">
+            <select
+                :id="id"
+                :disabled="disabled"
+                v-bind="$attrs"
+                @change="$emit('change')"
+                @input="$emit('input', $event.target.value)"
+            >
+                <option
+                    v-for="(item, index) in items"
+                    :key="index"
+                    :value="index"
+                >
                     {{ item }}
                 </option>
             </select>
@@ -47,7 +57,6 @@ export default {
     }
 };
 </script>
-
 
 <style lang="scss">
 .nya-select {

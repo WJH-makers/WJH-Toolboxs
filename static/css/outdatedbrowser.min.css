@@ -16,23 +16,23 @@ website:    http://www.burocratik.com
     text-transform: uppercase;
     z-index: 1500;
     background-color: #f25648;
-    color: #fff
+    color: #fff;
 }
 
 * html #outdated {
-    position: absolute
+    position: absolute;
 }
 
 #outdated h6 {
     font-size: 25px;
     line-height: 25px;
-    margin: 30px 0 10px
+    margin: 30px 0 10px;
 }
 
 #outdated p {
     font-size: 12px;
     line-height: 12px;
-    margin: 0
+    margin: 0;
 }
 
 #outdated #btnUpdateBrowser {
@@ -44,12 +44,12 @@ website:    http://www.burocratik.com
     color: #fff;
     text-decoration: none;
     border: 2px solid #fff;
-    cursor: pointer
+    cursor: pointer;
 }
 
 #outdated #btnUpdateBrowser:hover {
     color: #f25648;
-    background-color: #fff
+    background-color: #fff;
 }
 
 #outdated .last {
@@ -57,7 +57,7 @@ website:    http://www.burocratik.com
     top: 10px;
     right: 25px;
     width: 20px;
-    height: 20px
+    height: 20px;
 }
 
 #outdated #btnCloseUpdateBrowser {
@@ -68,5 +68,5 @@ website:    http://www.burocratik.com
     text-decoration: none;
     color: #fff;
     font-size: 36px;
-    line-height: 36px
+    line-height: 36px;
 }

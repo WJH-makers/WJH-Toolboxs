@@ -11,7 +11,7 @@
             type="radio"
             :checked="$parent.value === value"
             @change="updateVal"
-        >
+        />
         <label :for="id" class="radio"></label>
     </div>
 </template>

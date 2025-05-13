@@ -1,6 +1,12 @@
 <template>
-    <div class="nya-input" :class="{ 'fullwidth': fullwidth }">
-        <Dynamic v-if="label" class="input-title" tag="label" :for="id" :template="label" />
+    <div :class="{ fullwidth: fullwidth }" class="nya-input">
+        <Dynamic
+            v-if="label"
+            :for="id"
+            :template="label"
+            class="input-title"
+            tag="label"
+        />
         <div v-if="type === 'file'" class="input-file">
             <input
                 :id="id"
@@ -11,7 +17,7 @@
                 @change="$emit('change', $event)"
                 @input="$emit('input', $event.target.value, $event)"
                 @keyup="$emit('keyup', $event)"
-            >
+            />
             <label :for="id">
                 <span v-if="!value">{{ placeholder }}</span>
                 <span v-else class="filename">{{ handleFileName(value) }}</span>
@@ -24,7 +30,7 @@
             v-bind="$attrs"
             :value="value"
             :placeholder="placeholder"
-            :class="{'nya-hide-scroll' : autoheight}"
+            :class="{ 'nya-hide-scroll': autoheight }"
             @change="$emit('change', $event)"
             @input="textareaEvent"
             @keyup="$emit('keyup', $event)"
@@ -40,7 +46,7 @@
             @change="$emit('change', $event)"
             @input="$emit('input', $event.target.value, $event)"
             @keyup="$emit('keyup', $event)"
-        >
+        />
     </div>
 </template>
 

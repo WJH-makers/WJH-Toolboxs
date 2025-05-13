@@ -9,7 +9,7 @@
             type="checkbox"
             :checked="checked"
             @change="$emit('change', $event.target.checked)"
-        >
+        />
         <label :for="id" class="icon">
             <i v-if="icon" :class="`eva eva-${icon}`"></i>
         </label>
