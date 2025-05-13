@@ -176,19 +176,14 @@ export const state = () => {
                         description: '身份证号码查询/生成'
                     }
                 },
-
                 {
                     name: '时区转换器',
                     path: '/time_change',
                     head: {
-                        keywords: [
-                            '时区转换器',
-                            '时区'
-                        ],
+                        keywords: ['时区转换器', '时区'],
                         description: '时区转换'
                     }
                 }
-
             ]
         },
         {
@@ -460,6 +455,14 @@ export const state = () => {
                     }
                 },
                 {
+                    name: 'Windows 命令查询',
+                    path: '/Windows_command',
+                    head: {
+                        keywords: ['Windows 命令查询'],
+                        description: '在线Windows 命令查询'
+                    }
+                },
+                {
                     name: '文本编码解码',
                     path: '/encoding',
                     head: {
@@ -543,10 +546,7 @@ export const state = () => {
                 {
                     name: '正则大全',
                     path: '/any_rule',
-                    head: {
-                        keywords: ['正则大全'],
-                        description: '正则大全'
-                    }
+                    head: { keywords: ['正则大全'], description: '正则大全' }
                 }
             ]
         },
@@ -554,18 +554,9 @@ export const state = () => {
             title: '网站相关',
             icon: 'settings-2-outline',
             list: [
-                {
-                    name: '网站设置',
-                    path: '/setting'
-                },
-                {
-                    name: '工具隐藏',
-                    path: '/hide_tool'
-                },
-                {
-                    name: '友情链接',
-                    path: '/links'
-                }
+                { name: '网站设置', path: '/setting' },
+                { name: '工具隐藏', path: '/hide_tool' },
+                { name: '友情链接', path: '/links' }
             ]
         }
     ];

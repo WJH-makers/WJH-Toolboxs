@@ -1,0 +1,1 @@
+* `type file1.txt file2.txt  将 file1.txt 和 file2.txt 的内容合并输出到 combined.txt。
